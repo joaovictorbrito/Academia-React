@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,600;1,400&display=swap');
+.IconeAlteres {
+    width: 80px;
+    height: 80px;
+}
+
+ul, a {
+    list-style: none;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 13pt;
+    font-weight: 900;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+}
+ul, a:hover{
+    color: #3F8CC7;
+}
+.Agendamento {
+    height: 100%;
+    padding: 12px 19px;
+    border: 5px solid #ffffff;
+}
+.Agendamento:hover{
+    color: #3F8CC7;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.header{
+    position:fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    opacity: 1;
+}
+
+.content-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.open-nav{
+    display: none;
+}
+
+nav {
+    width: 100%;
+    max-width: 600px;
+}
+
+.list-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .list-menu a {
+    position: relative;
+    padding-bottom: 3px;
+
+}
+nav .list-menu a:hover{
+    color: #3F8CC7;
+}
+
+nav .list-menu a::before{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    left: 0;
+    bottom: 0;
+    background: #3F8CC7;
+    transition: all .3s ease;
+}
+
+nav .list-menu a:hover::before{
+    width: 100%;
+    transition: all .3s ease;
+}
+
+@media (max-width: 425px){
+    nav{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(37, 166, 184, 0.9);
+    }
+    nav .list-menu {
+        flex-direction: column;
+        margin: 0;
+        padding: 60px 0 0 0;
+    }
+    .Agendamento{
+        border: 0;
+    }
+    nav .list-menu a {
+        display: block;
+        margin-bottom: 20px;
+    }
+}
