@@ -1,0 +1,125 @@
+.containerPlano{
+    background-color: rgb(29, 28, 28);
+    color: white;
+    text-transform: uppercase;
+}
+.grid{
+    margin-top: 116px;
+}
+.containerPlano h3{
+    text-align: center;
+    font-size: 28pt;
+    padding-top: 65px;
+    
+    margin-top: 90px;
+}
+.planoMaster{
+    background-color: white;
+    color: #202020;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 86px;
+    padding-bottom: 30px;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    text-align: center;
+}
+.sectionPlanoJunior{
+    background-color: white;
+    color: #202020;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 86px;
+    padding-bottom: 30px;
+    
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    text-align: center;
+}
+.master{
+    background-color: #080808 ;
+    color: white;
+    height: 90px;
+}
+.containerPlano strong{
+    color:  rgb(216, 180, 19);
+}
+.master strong{
+    color: rgb(216, 180, 19);
+}
+.plano{
+    margin: -30px auto 0 auto;
+    border-radius: 12px;
+    background-color:#3F8CC7;
+    padding: 0 12px;
+    color: white;
+    font-size: 12pt;
+}
+.plano strong{
+    color: rgb(216, 180, 19);
+}
+.junior{
+    background-color: #1b63e9 ;
+    color: white;
+    height: 90px;
+}
+.planoJunior{
+    margin: -30px auto 0 auto;
+    border-radius: 12px;
+    background-color:black;
+    padding: 0 12px;
+    color: white;
+    font-size: 12pt;
+}
+.planoJunior strong{
+    color: rgb(216, 180, 19);
+}
+.junior strong{
+    color: rgb(216, 180, 19);
+}
+:focus{
+    outline: none;
+}
+.buttonVerMais{
+    background-color: black;
+    color: white;
+    padding: 13px 33px;
+    border-radius: 15px;
+    font-size: 13pt;
+    cursor: pointer;
+}
+
+.buttonJunior{
+    background-color: #1b63e9;
+    border: none;
+    margin-top: 36%;
+}
+
+.buttonVerMais:focus{
+    background-color: rgb(97, 94, 94) ;
+}
+
+@media(min-width: 615px){
+    .grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding-bottom: 36px;
+    }
+    .planoMaster, .sectionPlanoJunior{
+        width: 500px;
+        
+    }
+}
+@media(max-width: 614px){
+    .planoMaster, .sectionPlanoJunior{
+        width: 500px;
+        margin-top: 34px;
+        
+    }
+    
+}

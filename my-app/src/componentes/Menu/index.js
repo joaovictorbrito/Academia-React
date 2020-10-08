@@ -2,14 +2,22 @@ import React from 'react'
 import { BrowserRouter, Link } from 'react-router-dom'
 import './style.css'
 
-const Menu = () => (
+function Menu() {
+    function activate(){
+        var adicionarMenu = document.querySelector('.menu')
+        adicionarMenu.classList.toggle('active')
+
+        var efeitoButton = document.querySelector('.open-nav')
+        efeitoButton.classList.toggle('open')
+    }
+    return(
         <div className="header" > 
             <div className='container'>   
 
                 <div className="content-header">
-                    <img src="assets/IconeAlteres.svg" className='IconeAlteres'/>  
+                    <img src="assets/IconeAlteres.svg" alt='alteres' className='IconeAlteres'/>  
 
-                    <button className='open-nav'>
+                    <button className='open-nav' onClick={activate}>
                         <span className='line line_1'></span>
                         <span className='line line_2'></span>
                         <span className='line line_3'></span>
@@ -23,10 +31,11 @@ const Menu = () => (
                             </ul>   
                         </nav>       
                     </BrowserRouter>    
-                </div>   
-                 
+                </div>    
             </div>       
         </div>
-)
+    )
+} 
+    
 
 export default Menu
